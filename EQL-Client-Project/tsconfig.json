@@ -13,7 +13,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "outDir": "./dist",
+    "outDir": "./dist", //컴파일시  ts파일을 dist폴더에 js파일로 변경
 
     /* Linting */
     "strict": true,
