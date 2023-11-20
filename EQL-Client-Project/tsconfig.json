@@ -13,12 +13,15 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "outDir": "./dist",
 
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true, //console에서 경로 보이도록
+    "allowSyntheticDefaultImports": true //ts에서 Synthetic기본 import허용
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
