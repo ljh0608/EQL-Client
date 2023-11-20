@@ -24,5 +24,8 @@
   },
   "plugins": ["@typescript-eslint", "react"],
   "ignorePatterns": ["build", "dist", "public"], //lint 무시파일
-  "rules": {}
+  "rules": {
+    "import/prefer-default-export": "off", //확장자명 on
+    "import/extensions": ["off"] //확장자명 on
+  }
 }
