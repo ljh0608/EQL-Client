@@ -26,6 +26,11 @@
   "ignorePatterns": ["build", "dist", "public"], //lint 무시파일
   "rules": {
     "import/prefer-default-export": "off", //확장자명 on
-    "import/extensions": ["off"] //확장자명 on
+    "import/extensions": ["off"], //확장자명 on
+    "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": ["arrow-function", "function-declaration"] }
+    ]
   }
 }
