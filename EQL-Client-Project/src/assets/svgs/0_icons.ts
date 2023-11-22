@@ -23,6 +23,29 @@ import IcSmallstarGray from './IcSmallstarGray.svg?react';
 import IcSmallStarRed from './IcSmallStarRed.svg?react';
 import IcUndo from './IcUndo.svg?react';
 
-export {IcArrow,IcArrowBlackLeft,IcArrowDown,IcArrowDropdown,IcArrowGrayLeft,IcArrowGrayRight,IcArrowRight,IcArrowUp,
-  IcBookmarkActive,IcBookmarkDefault,IcChat,IcCheck,IcCheckboxPaymentChecked,IcCheckboxPayment,
-  IcJoin,IcLogin,IcMinus,IcMypage,IcOption,IcPlus,IcSearch,IcSmallstarGray,IcSmallStarRed,IcUndo};
+export {
+  IcArrow,
+  IcArrowBlackLeft,
+  IcArrowDown,
+  IcArrowDropdown,
+  IcArrowGrayLeft,
+  IcArrowGrayRight,
+  IcArrowRight,
+  IcArrowUp,
+  IcBookmarkActive,
+  IcBookmarkDefault,
+  IcChat,
+  IcCheck,
+  IcCheckboxPaymentChecked,
+  IcCheckboxPayment,
+  IcJoin,
+  IcLogin,
+  IcMinus,
+  IcMypage,
+  IcOption,
+  IcPlus,
+  IcSearch,
+  IcSmallstarGray,
+  IcSmallStarRed,
+  IcUndo,
+};
