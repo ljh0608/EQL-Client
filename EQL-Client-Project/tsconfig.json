@@ -24,5 +24,5 @@
     "allowSyntheticDefaultImports": true //ts에서 Synthetic기본 import허용
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
 }
