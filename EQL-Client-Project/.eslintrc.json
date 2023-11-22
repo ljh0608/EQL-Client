@@ -27,6 +27,11 @@
   "rules": {
     "import/prefer-default-export": "off", //확장자명 on
     "import/extensions": ["off"], //확장자명 on
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    },
     "react/react-in-jsx-scope": "off",
     "react/function-component-definition": [
       2,
