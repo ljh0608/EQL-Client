@@ -12,22 +12,20 @@ const GlobalStyle = styled.createGlobalStyle`
   html,
   body {
     margin: 0 auto;
-
     font-size: 62.5%;
   }
 
   a {
     cursor: pointer;
-
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
   }
 
   button {
-    border: none;
-    background: none;
     cursor: pointer;
     font: inherit;
+    background: none;
+    border: none;
   }
 
   select {
