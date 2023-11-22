@@ -13,7 +13,7 @@ const colors = {
   white: '#fffff',
 };
 
-const transparencys = {
+const transparencies = {
   forRed: '80%',
   forWhite: '40%',
 };
@@ -35,32 +35,41 @@ const FONT = ({ family, weight, size, lineHeight }: Font): string => {
 
 // medium =500
 // bold=700
-// underlinSemebold=600
+// underlineSemibold=600
 // Strikethrough_Medium =500
 
-// 예시입니다 지우고 다시 적용해야해요!
 const fonts = {
-  head1: FONT({ family: 'Pretendard Variable', weight: 600, size: 2.8, lineHeight: 3.4 }),
-  head2: FONT({ family: 'Pretendard Variable', weight: 600, size: 2.2, lineHeight: 3 }),
+  title1: FONT({ family: 'Pretendard Variable', weight: 500, size: 5.2, lineHeight: 1.2 }),
+  title2: FONT({ family: 'Pretendard Variable', weight: 500, size: 3.6, lineHeight: 1.3 }),
+  title3: FONT({ family: 'Pretendard Variable', weight: 500, size: 3.2, lineHeight: 1.3 }),
+  title4: FONT({ family: 'Pretendard Variable', weight: 700, size: 2.6, lineHeight: 1.3 }),
 
-  title1: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.8, lineHeight: 2.4 }),
-  title2: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.6, lineHeight: 2 }),
+  subtitle1: FONT({ family: 'Pretendard Variable', weight: 600, size: 2.8, lineHeight: 1.3 }),
+  subtitle_underlined1: FONT({ family: 'Pretendard Variable', weight: 600, size: 2, lineHeight: 1.4 }),
 
-  body1: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.6, lineHeight: 2.4 }),
-  body2: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.4, lineHeight: 2 }),
-  body3: FONT({ family: 'Pretendard Variable', weight: 400, size: 1.4, lineHeight: 2 }),
-  body4: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.2, lineHeight: 1.6 }),
+  body1: FONT({ family: 'Pretendard Variable', weight: 500, size: 2.4, lineHeight: 1.4 }),
+  body2: FONT({ family: 'Pretendard Variable', weight: 600, size: 2, lineHeight: 1.6 }),
+  body3: FONT({ family: 'Pretendard Variable', weight: 500, size: 2, lineHeight: 1.6 }),
+  body4: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.8, lineHeight: 1.6 }),
+  body5: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.8, lineHeight: 1.6 }),
+  body6: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.6, lineHeight: 1.6 }),
+  body7: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.6, lineHeight: 1.5 }),
+  body8: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.4, lineHeight: 1.4 }),
+  body_underlined8: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.4, lineHeight: 1.4 }),
+  body9: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.4, lineHeight: 1.4 }),
+  body10: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.2, lineHeight: 1.6 }),
 
-  button1: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.6, lineHeight: 2 }),
-  button2: FONT({ family: 'Pretendard Variable', weight: 400, size: 1.6, lineHeight: 2 }),
+  detail1: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.0, lineHeight: 1.6 }),
+  
+  number_strikethrough1: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.4, lineHeight: 1.6 }),
 };
 
 export type ColorsTypes = typeof colors;
 export type FontsTypes = typeof fonts;
-export type TransparencysTypes = typeof transparencys;
+export type TransparenciesTypes = typeof transparencies;
 
 export const theme: DefaultTheme = {
   colors,
-  transparencys,
+  transparencies,
   fonts,
 };
