@@ -10,6 +10,7 @@ export const FooterContainer = styled.div`
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   width: 45%;
   padding-top: 4.4rem;
@@ -17,8 +18,44 @@ export const InfoContainer = styled.div`
   padding-left: 3.6rem;
 `;
 
+export const InfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+`;
+
 export const InfoMainText = styled.h2`
   ${({ theme }) => theme.fonts.body9};
+
+  color: ${({ theme }) => theme.colors.black};
+`;
+
+export const InfoTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: center;
+
+  margin-top: 2.4rem;
+`;
+
+export const InfoText = styled.p`
+  ${({ theme }) => theme.fonts.body9};
+
+  color: ${({ theme }) => theme.colors.grey3};
+`;
+
+export const InfoLinkText = styled.span`
+  ${({ theme }) => theme.fonts.body_underlined8};
+
+  cursor: pointer;
+  color: ${({ theme }) => theme.colors.grey3};
+`;
+
+export const InfoCopyText = styled.p`
+  ${({ theme }) => theme.fonts.body10};
+
+  color: ${({ theme }) => theme.colors.grey3};
 `;
 
 export const MenuContainer = styled.div<{ $sequence: string }>`
