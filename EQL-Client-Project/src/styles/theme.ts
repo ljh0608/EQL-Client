@@ -11,11 +11,8 @@ const colors = {
   grey6: '#f2f2f2',
   grey7: '#FAFAFA',
   white: '#fffff',
-};
-
-const transparencies = {
-  forRed: '80%',
-  forWhite: '40%',
+  red_transparent: 'rgba(234, 50, 35, 0.80)',
+  white_transparent: 'rgba(255, 255, 255, 0.40)',
 };
 
 type Font = {
@@ -152,10 +149,8 @@ const fonts = {
 
 export type ColorsTypes = typeof colors;
 export type FontsTypes = typeof fonts;
-export type TransparenciesTypes = typeof transparencies;
 
 export const theme: DefaultTheme = {
   colors,
-  transparencies,
   fonts,
 };
