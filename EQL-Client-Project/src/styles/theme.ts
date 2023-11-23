@@ -29,7 +29,7 @@ const FONT = ({ family, weight, size, lineHeight }: Font): string => {
     font-family: ${family};
     font-weight : ${weight};
     font-size : ${size}rem;
-    line-height : ${lineHeight}rem;
+    line-height : ${lineHeight};
     `;
 };
 
@@ -45,7 +45,12 @@ const fonts = {
   title4: FONT({ family: 'Pretendard Variable', weight: 700, size: 2.6, lineHeight: 1.3 }),
 
   subtitle1: FONT({ family: 'Pretendard Variable', weight: 600, size: 2.8, lineHeight: 1.3 }),
-  subtitle_underlined1: FONT({ family: 'Pretendard Variable', weight: 600, size: 2, lineHeight: 1.4 }),
+  subtitle_underlined1: FONT({
+    family: 'Pretendard Variable',
+    weight: 600,
+    size: 2,
+    lineHeight: 1.4,
+  }),
 
   body1: FONT({ family: 'Pretendard Variable', weight: 500, size: 2.4, lineHeight: 1.4 }),
   body2: FONT({ family: 'Pretendard Variable', weight: 600, size: 2, lineHeight: 1.6 }),
@@ -55,13 +60,23 @@ const fonts = {
   body6: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.6, lineHeight: 1.6 }),
   body7: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.6, lineHeight: 1.5 }),
   body8: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.4, lineHeight: 1.4 }),
-  body_underlined8: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.4, lineHeight: 1.4 }),
+  body_underlined8: FONT({
+    family: 'Pretendard Variable',
+    weight: 600,
+    size: 1.4,
+    lineHeight: 1.4,
+  }),
   body9: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.4, lineHeight: 1.4 }),
   body10: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.2, lineHeight: 1.6 }),
 
   detail1: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.0, lineHeight: 1.6 }),
-  
-  number_strikethrough1: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.4, lineHeight: 1.6 }),
+
+  number_strikethrough1: FONT({
+    family: 'Pretendard Variable',
+    weight: 500,
+    size: 1.4,
+    lineHeight: 1.6,
+  }),
 };
 
 export type ColorsTypes = typeof colors;
