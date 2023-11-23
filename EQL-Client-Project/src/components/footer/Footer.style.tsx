@@ -5,7 +5,7 @@ export const FooterContainer = styled.div`
   width: 100%;
   min-width: 129rem;
   height: 40rem;
-  /* background-color: #a6c960; */
+
   border-top: 1px solid ${({ theme }) => theme.colors.grey4};
 `;
 
@@ -15,9 +15,7 @@ export const InfoContainer = styled.div`
   justify-content: space-between;
 
   width: 45%;
-  padding-top: 4.4rem;
-  padding-bottom: 3.9rem;
-  padding-left: 3.6rem;
+  padding: 4.4rem 0rem 3.9rem 3.6rem;
 `;
 
 export const InfoWrapper = styled.div`
