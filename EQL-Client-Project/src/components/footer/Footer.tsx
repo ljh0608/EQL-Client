@@ -24,9 +24,39 @@ const Footer = () => {
         <S.InfoCopyText>COPYRIGHT© 2023 HANDSOME. ALL RIGHTS RESERVED</S.InfoCopyText>
       </S.InfoContainer>
       <S.FooterHr />
-      <S.MenuContainer $sequence={'middle'}></S.MenuContainer>
+      <S.MenuContainer $sequence={'middle'}>
+        <S.HelpContainer>
+          <S.FooterMenuTitle>고객센터</S.FooterMenuTitle>
+          <S.MenuWrapper>
+            <S.FooterMenuText>FAQ</S.FooterMenuText>
+            <S.FooterMenuText>공지사항</S.FooterMenuText>
+            <S.FooterMenuText>제휴문의</S.FooterMenuText>
+            <S.FooterMenuText>입점상담</S.FooterMenuText>
+            <S.FooterMenuText>멤버십 안내</S.FooterMenuText>
+          </S.MenuWrapper>
+        </S.HelpContainer>
+        <S.SNSContainer>
+          <S.FooterMenuText>YOUTUBE</S.FooterMenuText>
+          <S.FooterMenuText>FACEBOOK</S.FooterMenuText>
+          <S.FooterMenuText>INSTAGRAM</S.FooterMenuText>
+        </S.SNSContainer>
+      </S.MenuContainer>
       <S.FooterHr />
-      <S.MenuContainer $sequence={'last'}></S.MenuContainer>
+      <S.MenuContainer $sequence={'last'}>
+        <S.HelpContainer>
+          <S.FooterMenuTitle>회사소개</S.FooterMenuTitle>
+          <S.MenuWrapper>
+            <S.FooterMenuText>ABOUT EQL</S.FooterMenuText>
+            <S.FooterMenuText>회사소개</S.FooterMenuText>
+            <S.MenuLinkText>개인정보처리방침</S.MenuLinkText>
+            <S.FooterMenuText>입점상담</S.FooterMenuText>
+            <S.FooterMenuText>ESG</S.FooterMenuText>
+          </S.MenuWrapper>
+        </S.HelpContainer>
+        <S.SNSContainer>
+          <S.FooterMenuText>FAMILY SITE +</S.FooterMenuText>
+        </S.SNSContainer>
+      </S.MenuContainer>
     </S.FooterContainer>
   );
 };
