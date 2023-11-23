@@ -22,6 +22,7 @@ import IcSearch from './IcSearch.svg?react';
 import IcSmallstarGray from './IcSmallstarGray.svg?react';
 import IcSmallStarRed from './IcSmallStarRed.svg?react';
 import IcUndo from './IcUndo.svg?react';
+import IcArrowBreadCrumb from './IcArrowBreadcrumb.svg?react';
 
 export {
   IcArrow,
@@ -48,4 +49,5 @@ export {
   IcSmallstarGray,
   IcSmallStarRed,
   IcUndo,
+  IcArrowBreadCrumb,
 };
