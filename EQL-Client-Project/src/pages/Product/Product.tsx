@@ -20,13 +20,13 @@ const Product = () => {
       <S.MainContainer>
         <S.LeftContainer>dfdsdf</S.LeftContainer>
         <S.RightContainer>
-          <S.SideHeader>
+          <S.RightHeader>
             <S.BrandName>MSCHF</S.BrandName>
             <S.BookmarkWrapper>
               <IcBookmarkDefault />
               <S.BookmarkCount>813</S.BookmarkCount>
             </S.BookmarkWrapper>
-          </S.SideHeader>
+          </S.RightHeader>
 
           <S.ItemTitle>[11/08(수) 예약배송] RHOMBUS LONG SLEEVE (BLACK)</S.ItemTitle>
 

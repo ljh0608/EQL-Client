@@ -7,6 +7,7 @@ export const ProductContainer = styled.div`
   justify-content: center;
 `;
 
+//상단 브레드크럼바
 export const CategoryBar = styled.div`
   display: flex;
   gap: 2.2rem;
@@ -28,6 +29,7 @@ export const Category = styled.span`
   }
 `;
 
+//하단 영역
 export const MainContainer = styled.div`
   display: flex;
   gap: 4rem;
@@ -36,6 +38,8 @@ export const MainContainer = styled.div`
 
   margin-top: 2.2rem;
 `;
+
+//하단 영역 중 왼쪽 영역
 export const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -47,6 +51,7 @@ export const LeftContainer = styled.div`
   background-color: black;
 `;
 
+//하단 영역 중 오른쪽 영역
 export const RightContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -55,11 +60,9 @@ export const RightContainer = styled.div`
 
   width: 43rem;
   margin-top: 4.3rem;
-
-  /* background-color: green; */
 `;
 
-export const SideHeader = styled.div`
+export const RightHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,6 +103,7 @@ export const ItemTitle = styled.p`
   ${({ theme }) => theme.fonts.body1};
 `;
 
+//가격 영역
 export const PriceWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -126,6 +130,7 @@ export const CouponBtn = styled.div`
   ${({ theme }) => theme.fonts.body10};
 `;
 
+//평점 영역
 export const RatingWrapper = styled.div`
   display: flex;
   gap: 0.6rem;
@@ -146,7 +151,6 @@ export const RatingScoreWrapper = styled.div`
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  justify-content: center;
 `;
 
 export const RatingScore = styled.p`
@@ -157,6 +161,7 @@ export const RatingScore = styled.p`
   ${({ theme }) => theme.fonts.body10};
 `;
 
+//추가 정보 영역
 export const Option = styled.div`
   display: flex;
   flex-direction: column;
@@ -212,13 +217,14 @@ export const DeliveryText = styled.p`
   ${({ theme }) => theme.fonts.body9};
 `;
 
+//경계선
 export const Line = styled.div`
   width: 100%;
   height: 1px;
-  /* margin-bottom: 2.65rem; */
   background-color: ${({ theme }) => theme.colors.grey6};
 `;
 
+//드롭다운 옵션 영역
 export const DropBox = styled.div`
   display: flex;
   align-items: center;
@@ -231,7 +237,6 @@ export const DropBox = styled.div`
   border-radius: 0.2rem;
 `;
 
-//여기에 텍스트 정보 입력하기-!!!
 export const DropBoxText = styled.p`
   color: ${({ theme }) => theme.colors.black};
   ${({ theme }) => theme.fonts.body9};
@@ -248,14 +253,14 @@ export const DropBoxWrapper = styled.div`
   margin-bottom: 5rem;
 `;
 
+//총 가격 영역
 export const TotalPriceWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   width: 100%;
-  margin-top: 1.5rem;
-  margin-bottom: 2.6rem;
+  margin: 1.5rem 0 2.6rem;
 `;
 
 export const TotalPriceText = styled.p`
@@ -268,6 +273,7 @@ export const TotalPrice = styled.p`
   ${({ theme }) => theme.fonts.body1};
 `;
 
+//버튼 영역
 export const ButtonWrapper = styled.div`
   display: flex;
   gap: 1rem;
@@ -295,7 +301,3 @@ export const Button = styled.div`
     background-color: ${({ theme }) => theme.colors.black};
   }
 `;
-
-// line
-//  padding-left: 0.3rem;
-//  padding-right: 1rem;
