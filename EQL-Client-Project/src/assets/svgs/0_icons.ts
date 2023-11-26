@@ -23,7 +23,7 @@ import IcSmallstarGray from './IcSmallstarGray.svg?react';
 import IcSmallStarRed from './IcSmallStarRed.svg?react';
 import IcUndo from './IcUndo.svg?react';
 import IcArrowBreadCrumb from './IcArrowBreadcrumb.svg?react';
-
+import IcBrandImg from './IcBrandImg.svg?react';
 export {
   IcArrow,
   IcArrowBlackLeft,
@@ -50,4 +50,5 @@ export {
   IcSmallStarRed,
   IcUndo,
   IcArrowBreadCrumb,
+  IcBrandImg,
 };
