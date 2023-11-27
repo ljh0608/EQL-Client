@@ -4,12 +4,14 @@ export const DeliveryInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 76.2rem;
+  margin-bottom: 5.5rem;
 `;
 
 export const DeliveryInfoContainer = styled.div`
   display: flex;
   gap: 18.5rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 `;
 
 export const DeliveryInfoTitle = styled.span`
