@@ -12,7 +12,7 @@ const BreadCrumbItem = ({ type, children, isLast }: BreadCrumItemTypes) => {
   return (
     <S.BreadCrumContainer>
       <S.BreadCrumFont $type={type}>{children}</S.BreadCrumFont>
-      {isLast ? null : <IcOrderArrowRight />}
+      {!isLast && <IcOrderArrowRight />}
     </S.BreadCrumContainer>
   );
 };
