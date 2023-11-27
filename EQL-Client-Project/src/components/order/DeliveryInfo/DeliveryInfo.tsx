@@ -1,6 +1,7 @@
 import * as S from './DeliveryInfo.style';
 
 import { IcArrowDown } from '../../../assets/svgs/0_icons';
+import LightHr from '../LightHr/LightHr';
 import OrderHeader from '../OrderHeader/OrderHeader';
 import Spacing from '../../common/spacing/Spacing';
 
@@ -28,6 +29,7 @@ const DeliveryInfo = () => {
           </S.SelectBox>
         </S.DeliveryInfoSection>
       </S.DeliveryInfoContainer>
+      <LightHr></LightHr>
     </S.DeliveryInfoWrapper>
   );
 };

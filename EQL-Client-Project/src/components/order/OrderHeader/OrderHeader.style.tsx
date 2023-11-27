@@ -17,5 +17,4 @@ export const HeaderUnderline = styled.hr`
   height: 0.1rem;
   margin-left: 0;
   color: ${({ theme }) => theme.colors.black};
-  /* border: 1px solid ${({ theme }) => theme.colors.black}; */
 `;
