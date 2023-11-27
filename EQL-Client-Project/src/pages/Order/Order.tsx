@@ -1,9 +1,13 @@
+import * as S from './Order.style';
+
 import BreadCrumb from '../../components/order/BreadCrumb/BreadCrumb';
+import DeliveryInfo from '../../components/order/DeliveryInfo/DeliveryInfo';
 const Order = () => {
   return (
-    <div>
+    <S.OrderWrapper>
       <BreadCrumb />
-    </div>
+      <DeliveryInfo />
+    </S.OrderWrapper>
   );
 };
 
