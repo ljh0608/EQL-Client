@@ -10,17 +10,18 @@ import IcBookmarkActive from './IcBookmarkActive.svg?react';
 import IcBookmarkDefault from './IcBookmarkDefault.svg?react';
 import IcChat from './IcChat.svg?react';
 import IcCheck from './IcCheck.svg?react';
-import IcCheckboxPaymentChecked from './IcCheckboxPaymentChecked.svg?react';
 import IcCheckboxPayment from './IcCheckboxPayment.svg?react';
+import IcCheckboxPaymentChecked from './IcCheckboxPaymentChecked.svg?react';
 import IcJoin from './IcJoin.svg?react';
 import IcLogin from './IcLogin.svg?react';
 import IcMinus from './IcMinus.svg?react';
 import IcMypage from './IcMypage.svg?react';
 import IcOption from './IcOption.svg?react';
+import IcOrderArrowRight from './IcOrderArrowRight.svg?react';
 import IcPlus from './IcPlus.svg?react';
 import IcSearch from './IcSearch.svg?react';
-import IcSmallstarGray from './IcSmallstarGray.svg?react';
 import IcSmallStarRed from './IcSmallStarRed.svg?react';
+import IcSmallstarGray from './IcSmallstarGray.svg?react';
 import IcUndo from './IcUndo.svg?react';
 import IcArrowBreadCrumb from './IcArrowBreadcrumb.svg?react';
 import IcBrandImg from './IcBrandImg.svg?react';
@@ -51,4 +52,5 @@ export {
   IcUndo,
   IcArrowBreadCrumb,
   IcBrandImg,
+  IcOrderArrowRight,
 };
