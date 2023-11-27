@@ -1,5 +1,10 @@
+import BreadCrumb from '../../components/order/BreadCrumb/BreadCrumb';
 const Order = () => {
-  return <div>Order</div>;
+  return (
+    <div>
+      <BreadCrumb />
+    </div>
+  );
 };
 
 export default Order;
