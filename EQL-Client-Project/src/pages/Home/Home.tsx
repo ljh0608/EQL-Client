@@ -1,6 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-
+import { HomeContainer } from './Home.style';
 const Home = () => {
-  return <></>;
+  return (
+    <HomeContainer>
+      <h1>asdasd</h1>
+    </HomeContainer>
+  );
 };
+
+export default Home;
