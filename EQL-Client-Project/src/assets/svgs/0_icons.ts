@@ -26,6 +26,7 @@ import IcUndo from './IcUndo.svg?react';
 import IcArrowUpLinear from './IcArrowUpLinear.svg?react';
 import IcArrowBreadCrumb from './IcArrowBreadcrumb.svg?react';
 import IcBrandImg from './IcBrandImg.svg?react';
+import IcNew from './IcNew.svg?react';
 export {
   IcArrow,
   IcArrowBlackLeft,
@@ -55,4 +56,5 @@ export {
   IcBrandImg,
   IcOrderArrowRight,
   IcArrowUpLinear,
+  IcNew,
 };
