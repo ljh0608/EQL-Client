@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const OrderWrapper = styled.div`
   width: 76.2rem;
+  margin-bottom: 5.6rem;
 `;
 export const OrderInfoWrapper = styled.div`
   display: flex;

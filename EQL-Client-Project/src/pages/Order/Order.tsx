@@ -1,6 +1,7 @@
 import * as S from './Order.style';
 
 import BreadCrumb from '../../components/order/BreadCrumb/BreadCrumb';
+import Coupon from '../../components/order/Coupon/Coupon';
 import DeliveryInfo from '../../components/order/DeliveryInfo/DeliveryInfo';
 import OrderProductInfo from '../../components/order/OrderProductInfo/OrderProductInfo';
 
@@ -10,6 +11,7 @@ const Order = () => {
       <BreadCrumb />
       <DeliveryInfo />
       <OrderProductInfo />
+      <Coupon />
     </S.OrderWrapper>
   );
 };
