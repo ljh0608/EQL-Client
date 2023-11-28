@@ -23,6 +23,7 @@ import IcSearch from './IcSearch.svg?react';
 import IcSmallStarRed from './IcSmallStarRed.svg?react';
 import IcSmallstarGray from './IcSmallstarGray.svg?react';
 import IcUndo from './IcUndo.svg?react';
+import IcArrowUpLinear from './IcArrowUpLinear.svg?react';
 import IcArrowBreadCrumb from './IcArrowBreadcrumb.svg?react';
 import IcBrandImg from './IcBrandImg.svg?react';
 import IcNew from './IcNew.svg?react';
@@ -54,5 +55,6 @@ export {
   IcArrowBreadCrumb,
   IcBrandImg,
   IcOrderArrowRight,
-  IcNew
+  IcArrowUpLinear,
+  IcNew,
 };
