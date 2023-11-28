@@ -1,19 +1,33 @@
 import * as S from './Left.style';
 import { IcArrow, IcBrandImg, IcPlus } from '../../assets/svgs/0_icons';
 import { RecommendFirstImg, RecommendSecondImg } from '../../assets/images';
+import { PRODUCTIMGS } from '../../constants/ProductImgs';
+import { useParams } from 'react-router-dom';
+// import { useEffect } from 'react';
 
 const Left = () => {
+  const { productId } = useParams();
+  const ItemId = Number(productId);
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     try {
+  //       const response = await axios.get(
+  //         `${import.meta.env.VITE_BASE_URL}/api/v1/members/${userId}`,
+  //       );
+
+  //       setDataResponse(response);
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
+  //   getData();
+  // }, []);
+
   return (
     <S.LeftContainer>
-      <S.ProductPreviewImg
-        src="https://cdn.eqlstore.com/goods/EQBR/23/10/12/GPGS23101250541_0_ORGINL_1697087357024.jpg?RS=389"
-        alt="상품 이미지"
-      />
+      <S.ProductPreviewImg src={PRODUCTIMGS[ItemId]} alt="상품 이미지" />
       <S.ProductImgWrapper>
-        <S.ProductImg
-          src="https://cdn.eqlstore.com/goods/EQBR/23/10/12/GPGS23101250541_0_ORGINL_1697087357024.jpg?RS=389"
-          alt="상품 미리보기 이미지"
-        />
+        <S.ProductImg src={PRODUCTIMGS[ItemId]} alt="상품 미리보기 이미지" />
         <S.ImgText>연관 추천 상품</S.ImgText>
       </S.ProductImgWrapper>
 
@@ -115,10 +129,7 @@ const Left = () => {
             COOL IRON IF NEEDED
           </S.ItemInfo>
         </S.ItemInfoContainer>
-        <S.ProductInfoImg
-          src="https://cdn.eqlstore.com/goods/EQBR/23/10/12/GPGS23101250541_0_ORGINL_1697087357024.jpg?RS=389"
-          alt="product detail image"
-        />
+        <S.ProductInfoImg src={PRODUCTIMGS[ItemId]} alt="product detail image" />
 
         <S.SeeMoreBtn>
           <S.SeeMoreBtnText>상품 정보 더보기</S.SeeMoreBtnText>
