@@ -10,7 +10,6 @@ import {
   IcSearch,
 } from '../../assets/svgs/0_icons';
 
-import DropDown from './dropdown/DropDown';
 import { IcArrow } from '../../assets/svgs/0_icons';
 
 const Header = () => {
