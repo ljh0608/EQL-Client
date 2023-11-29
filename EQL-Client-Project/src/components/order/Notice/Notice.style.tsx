@@ -1,3 +1,4 @@
+import { IcOrderEventTag } from '../../../assets/svgs/0_icons';
 import styled from 'styled-components';
 export const NoticeWrapper = styled.div`
   display: flex;
@@ -41,4 +42,8 @@ export const ContentWrapper = styled.div`
   display: flex;
   gap: 0.5rem;
   align-items: center;
+`;
+
+export const IconOrderEventTag = styled(IcOrderEventTag)`
+  position: relative;
 `;

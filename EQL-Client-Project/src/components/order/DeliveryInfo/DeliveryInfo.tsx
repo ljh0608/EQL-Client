@@ -29,7 +29,7 @@ const DeliveryInfo = () => {
           </S.SelectBox>
         </S.DeliveryInfoSection>
       </S.DeliveryInfoContainer>
-      <LightHr></LightHr>
+      <LightHr/>
     </S.DeliveryInfoWrapper>
   );
 };

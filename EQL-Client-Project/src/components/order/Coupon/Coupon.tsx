@@ -1,5 +1,6 @@
 import * as S from './Coupon.style';
 
+import LightHr from '../LightHr/LightHr';
 import OrderHeader from '../OrderHeader/OrderHeader';
 
 const Coupon = () => {
@@ -38,6 +39,7 @@ const Coupon = () => {
           <S.CouponDescription>보유 : 280M</S.CouponDescription>
         </S.CouponBox>
       </S.CouponContainer>
+      <LightHr />
     </S.CouponWrapper>
   );
 };
