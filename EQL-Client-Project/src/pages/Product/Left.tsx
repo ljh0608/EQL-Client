@@ -2,41 +2,28 @@ import * as S from './Left.style';
 import { IcArrow, IcBrandImg, IcPlus } from '../../assets/svgs/0_icons';
 import { RecommendFirstImg, RecommendSecondImg } from '../../assets/images';
 import { PRODUCTIMGS } from '../../constants/ProductImgs';
-import { useParams } from 'react-router-dom';
-// import { useEffect } from 'react';
 
-const Left = () => {
-  const { productId } = useParams();
-  const ItemId = Number(productId);
-  // useEffect(() => {
-  //   const getData = async () => {
-  //     try {
-  //       const response = await axios.get(
-  //         `${import.meta.env.VITE_BASE_URL}/api/v1/members/${userId}`,
-  //       );
+interface LeftProps {
+  itemId: number;
+}
 
-  //       setDataResponse(response);
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-  //   getData();
-  // }, []);
+const Left = (props: LeftProps) => {
+  const { itemId } = props;
 
   return (
     <S.LeftContainer>
-      <S.ProductPreviewImg src={PRODUCTIMGS[ItemId]} alt="상품 이미지" />
+      <S.ProductPreviewImg src={PRODUCTIMGS[itemId]} alt="상품 이미지" />
       <S.ProductImgWrapper>
-        <S.ProductImg src={PRODUCTIMGS[ItemId]} alt="상품 미리보기 이미지" />
+        <S.ProductImg src={PRODUCTIMGS[itemId]} alt="상품 미리보기 이미지" />
         <S.ImgText>연관 추천 상품</S.ImgText>
       </S.ProductImgWrapper>
 
       <S.ButtonWrapper>
-        <S.Button>
+        <S.Button type="button">
           <S.ButtonText>네이버페이로 결제 시 5,000P 추가 적립</S.ButtonText>
           <IcArrow />
         </S.Button>
-        <S.Button>
+        <S.Button type="button">
           <S.ButtonText>카톡 플친에게 드리는 15% 쿠폰</S.ButtonText>
           <IcArrow />
         </S.Button>
@@ -129,24 +116,24 @@ const Left = () => {
             COOL IRON IF NEEDED
           </S.ItemInfo>
         </S.ItemInfoContainer>
-        <S.ProductInfoImg src={PRODUCTIMGS[ItemId]} alt="product detail image" />
+        <S.ProductInfoImg src={PRODUCTIMGS[itemId]} alt="product detail image" />
 
-        <S.SeeMoreBtn>
+        <S.SeeMoreBtn type="button">
           <S.SeeMoreBtnText>상품 정보 더보기</S.SeeMoreBtnText>
         </S.SeeMoreBtn>
 
         <S.TabBox>
-          <S.Tab>
+          <S.Tab type="button">
             <S.TabTitle>상품 사이즈 정보</S.TabTitle>
             <S.TabTitle className="sizeGuide">SIZE GUIDE</S.TabTitle>
           </S.Tab>
           <S.TabLine />
-          <S.Tab>
+          <S.Tab type="button">
             <S.TabTitle>교환/환불 배송 정보</S.TabTitle>
             <IcPlus />
           </S.Tab>
           <S.TabLine />
-          <S.Tab>
+          <S.Tab type="button">
             <S.TabTitle>상품 필수 정보</S.TabTitle>
             <IcPlus />
           </S.Tab>

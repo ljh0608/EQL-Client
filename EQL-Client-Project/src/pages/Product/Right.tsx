@@ -7,22 +7,29 @@ import {
   IcArrowDropdown,
 } from '../../assets/svgs/0_icons';
 
-const Right = () => {
+interface RightProps {
+  brandName: string;
+  itemName: string;
+  price: number;
+}
+
+const Right = (props: RightProps) => {
+  const { brandName, itemName, price } = props;
   return (
     <S.RightContainer>
       <S.RightHeader>
-        <S.BrandName>MSCHF</S.BrandName>
+        <S.BrandName>{brandName}</S.BrandName>
         <S.BookmarkWrapper>
           <IcBookmarkDefault />
           <S.BookmarkCount>813</S.BookmarkCount>
         </S.BookmarkWrapper>
       </S.RightHeader>
 
-      <S.ItemTitle>[11/08(수) 예약배송] RHOMBUS LONG SLEEVE (BLACK)</S.ItemTitle>
+      <S.ItemTitle>{itemName}</S.ItemTitle>
 
       <S.PriceWrapper>
-        <S.Price>58,000</S.Price>
-        <S.CouponBtn>쿠폰 받기</S.CouponBtn>
+        <S.Price>{price}</S.Price>
+        <S.CouponBtn type="button">쿠폰 받기</S.CouponBtn>
       </S.PriceWrapper>
 
       <S.RatingWrapper>
@@ -65,11 +72,11 @@ const Right = () => {
       </S.Option>
 
       <S.DropBoxWrapper>
-        <S.DropBox>
+        <S.DropBox type="button">
           <S.DropBoxText>BLACK</S.DropBoxText>
           <IcArrowDropdown />
         </S.DropBox>
-        <S.DropBox>
+        <S.DropBox type="button">
           <S.DropBoxText>사이즈</S.DropBoxText>
           <IcArrowDropdown />
         </S.DropBox>
@@ -79,12 +86,16 @@ const Right = () => {
 
       <S.TotalPriceWrapper>
         <S.TotalPriceText>총 상품 금액</S.TotalPriceText>
-        <S.TotalPrice>58,000</S.TotalPrice>
+        <S.TotalPrice>{price}</S.TotalPrice>
       </S.TotalPriceWrapper>
 
       <S.ButtonWrapper>
-        <S.Button className="cart">장바구니에 담기</S.Button>
-        <S.Button className="order">바로 구매하기</S.Button>
+        <S.Button type="button" className="cart">
+          장바구니에 담기
+        </S.Button>
+        <S.Button type="button" className="order">
+          바로 구매하기
+        </S.Button>
       </S.ButtonWrapper>
     </S.RightContainer>
   );
