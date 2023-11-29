@@ -5,7 +5,14 @@ import LightHr from '../LightHr/LightHr';
 import OrderHeader from '../OrderHeader/OrderHeader';
 import Spacing from '../../common/spacing/Spacing';
 
-const DeliveryInfo = () => {
+type DeliveryInfo = {
+  memberName: string;
+  phoneNumber: string;
+  address: string;
+  postalCode: number;
+};
+const DeliveryInfo = ({ memberName, phoneNumber, address, postalCode }: DeliveryInfo) => {
+  console.log(memberName);
   return (
     <S.DeliveryInfoWrapper>
       <OrderHeader>배송 정보</OrderHeader>
@@ -17,11 +24,13 @@ const DeliveryInfo = () => {
             <S.ChangeAddress>배송지 변경</S.ChangeAddress>
           </S.DeliveryInfoBox>
           <Spacing $spacing={'0.9'}></Spacing>
-          <S.DescriptionText>유효진/010-1234-5678</S.DescriptionText>
+          <S.DescriptionText>
+            {memberName} / {phoneNumber}
+          </S.DescriptionText>
           <Spacing $spacing={'0.7'}></Spacing>
-          <S.DescriptionText>서울 서대문구 창천동 쓰리알 유시티 611호</S.DescriptionText>
+          <S.DescriptionText>{address}</S.DescriptionText>
           <Spacing $spacing={'0.4'}></Spacing>
-          <S.ZipCode>(우편번호 : 03785)</S.ZipCode>
+          <S.ZipCode>(우편번호 : {postalCode})</S.ZipCode>
           <Spacing $spacing={'1.8'}></Spacing>
           <S.SelectBox>
             <S.SelectBoxText>배송 요청사항 선택</S.SelectBoxText>
@@ -29,7 +38,7 @@ const DeliveryInfo = () => {
           </S.SelectBox>
         </S.DeliveryInfoSection>
       </S.DeliveryInfoContainer>
-      <LightHr/>
+      <LightHr />
     </S.DeliveryInfoWrapper>
   );
 };
