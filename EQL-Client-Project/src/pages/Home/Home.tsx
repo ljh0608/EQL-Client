@@ -1,5 +1,10 @@
+
 import React from 'react';
 import { HomeContainer } from './Home.style';
+
+import styled from 'styled-components';
+
+
 const Home = () => {
   return (
     <HomeContainer>
