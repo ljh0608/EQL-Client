@@ -30,6 +30,9 @@ import IcSearch from './IcSearch.svg?react';
 import IcSmallStarRed from './IcSmallStarRed.svg?react';
 import IcSmallstarGray from './IcSmallstarGray.svg?react';
 import IcUndo from './IcUndo.svg?react';
+import IcEqlLogo from './IcEqlLogo.svg?react';
+import IcCart from './IcCart.svg?react';
+import IcLine from './IcLine.svg?react';
 import IcArrowUpLinear from './IcArrowUpLinear.svg?react';
 
 export {
@@ -61,9 +64,15 @@ export {
   IcSmallstarGray,
   IcSmallStarRed,
   IcUndo,
+
+  IcEqlLogo,
+  IcCart,
+  IcLine,
+
   IcArrowBreadCrumb,
   IcBrandImg,
   IcOrderArrowRight,
   IcArrowUpLinear,
   IcNew,
+
 };

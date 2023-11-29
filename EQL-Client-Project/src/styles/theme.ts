@@ -31,7 +31,8 @@ const FONT = ({
   letterSpacing,
   textDecorationLine,
 }: Font): string => {
-  return `
+  if (letterSpacing && textDecorationLine) {
+    return `
     font-family: ${family};
     font-weight : ${weight};
     font-size : ${size}rem;
@@ -39,6 +40,15 @@ const FONT = ({
     letter-spacing: ${letterSpacing}px;
     text-decoration-line: ${textDecorationLine};
     `;
+  } else {
+    return `
+    font-family: ${family};
+    font-weight : ${weight};
+    font-size : ${size}rem;
+    line-height : ${lineHeight};
+
+    `;
+  }
 };
 
 // medium =500
