@@ -30,6 +30,8 @@ import IcSearch from './IcSearch.svg?react';
 import IcSmallStarRed from './IcSmallStarRed.svg?react';
 import IcSmallstarGray from './IcSmallstarGray.svg?react';
 import IcUndo from './IcUndo.svg?react';
+import IcArrowUpLinear from './IcArrowUpLinear.svg?react';
+
 export {
   IcArrow,
   IcOrderCheck,
@@ -62,5 +64,6 @@ export {
   IcArrowBreadCrumb,
   IcBrandImg,
   IcOrderArrowRight,
+  IcArrowUpLinear,
   IcNew,
 };
