@@ -54,7 +54,7 @@ const PaymentMethod = () => {
         <S.CreditCardNoticeWrapper>
           <S.CreditCardNoticeTitle>신용카드 이용안내</S.CreditCardNoticeTitle>
           <S.CreditCardNoticeContainer>
-            <S.CreditCardNoticeText>•</S.CreditCardNoticeText>
+            <S.CreditCardNoticeDot>•</S.CreditCardNoticeDot>
             <S.CreditCardNoticeText> 신용카드 할인 행사 안내</S.CreditCardNoticeText>
           </S.CreditCardNoticeContainer>
         </S.CreditCardNoticeWrapper>
