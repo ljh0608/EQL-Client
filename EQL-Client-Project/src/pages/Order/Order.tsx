@@ -66,7 +66,7 @@ const Order = () => {
                 address={res.data.consumerInfo.address}
                 postalCode={res.data.consumerInfo.postalCode}
               />
-              <OrderProductInfo />
+              <OrderProductInfo itemInfo={res.data.orderItemInfo} />
               <Coupon />
               <Notice />
               <PaymentMethod />
