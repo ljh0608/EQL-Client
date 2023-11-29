@@ -1,7 +1,5 @@
 import * as S from './DropDown.style';
 
-import { Dispatch, SetStateAction } from 'react';
-
 import { IcArrow } from '../../../assets/svgs/0_icons';
 
 const DropDown = () => {

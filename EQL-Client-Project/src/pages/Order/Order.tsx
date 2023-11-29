@@ -3,7 +3,6 @@ import * as S from './Order.style';
 import { useEffect, useState } from 'react';
 
 import BreadCrumb from '../../components/order/BreadCrumb/BreadCrumb';
-import { ConsumerInfo } from '../../constants/ConsumerInfo';
 import Coupon from '../../components/order/Coupon/Coupon';
 import DeliveryInfo from '../../components/order/DeliveryInfo/DeliveryInfo';
 import Notice from '../../components/order/Notice/Notice';
@@ -23,15 +22,13 @@ type OrderFetch = {
     orderItemInfo: {
       totalItemsAmount: number;
       totalItemsPrice: number;
-      itemSummaries: [
-        {
-          itemId: number;
-          amount: number;
-          itemName: string;
-          brandName: string;
-          totalItemPrice: number;
-        },
-      ][];
+      itemSummaries: {
+        itemId: number;
+        amount: number;
+        itemName: string;
+        brandName: string;
+        totalItemPrice: number;
+      }[];
     };
   };
 };
@@ -51,7 +48,6 @@ const Order = () => {
     getData();
   }, []);
 
-  // console.log(res.data.customInfo.memberName);
   return (
     <S.OrderWrapper>
       <BreadCrumb />
@@ -73,7 +69,7 @@ const Order = () => {
             </>
           )}
         </S.OrderLayout>
-        <PaymentInfo />
+        {res && <PaymentInfo totalPrice={res.data.orderItemInfo.totalItemsPrice} />}
       </S.OrderContainer>
     </S.OrderWrapper>
   );
