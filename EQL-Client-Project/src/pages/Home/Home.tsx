@@ -1,13 +1,16 @@
+
+import React from 'react';
+import { HomeContainer } from './Home.style';
+
 import styled from 'styled-components';
 
+
 const Home = () => {
-  return <Title1> Home </Title1>;
+  return (
+    <HomeContainer>
+      <h1>asdasd</h1>
+    </HomeContainer>
+  );
 };
 
 export default Home;
-
-const Title1 = styled.div`
-  height: 151.7rem;
-  margin: 2rem;
-  font-size: ${({ theme }) => theme.fonts.body2};
-`;
