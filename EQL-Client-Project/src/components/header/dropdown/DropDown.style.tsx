@@ -2,7 +2,7 @@ import styled from 'styled-components';
 export const DropDownContainer = styled.section`
   position: absolute;
 
-  display: flex;
+  display: none;
   justify-content: flex-start;
 
   width: 100%;
@@ -18,7 +18,7 @@ export const CategoryContainer = styled.div`
   flex-direction: column;
   gap: 2.2rem;
 
-  width: 5.1rem;
+  width: 7.1rem;
   height: 10.4rem;
   margin-right: 3rem;
 `;
@@ -27,17 +27,20 @@ export const CategoryWrapper = styled.span`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: center;
   ${({ theme }) => theme.fonts.body8};
 
   color: ${({ theme }) => theme.colors.black};
 `;
 
 export const CategoryLayout = styled.div`
+  ${({ theme }) => theme.fonts.body8};
+
   display: flex;
   flex-direction: row;
-  margin-bottom: 2.1rem;
+  align-items: center;
 
-  ${({ theme }) => theme.fonts.body8};
+  margin-bottom: 2.1rem;
 
   color: ${({ theme }) => theme.colors.black};
 `;
