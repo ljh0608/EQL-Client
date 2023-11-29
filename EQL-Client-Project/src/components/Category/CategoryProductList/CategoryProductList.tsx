@@ -3,6 +3,7 @@ import { PRODUCTIMGS } from '../../../constants/ProductImgs'
 import { IcArrowRight, IcBookmarkDefault, IcChat, IcNew } from '../../../assets/svgs/0_icons';
 import { useEffect, useState } from 'react';
 import { client } from '../../../utils/api/axios.ts';
+import { useNavigate } from 'react-router-dom';
 
 type itemListDataType = {
   "itemId": number,
@@ -12,32 +13,52 @@ type itemListDataType = {
 }
 
 const CategoryproductList = () => {
+  const navigate=useNavigate();
+
   const [page,setPage]=useState(1);
-  const [itemListData,setItemListData]=useState<itemListDataType[]>([])
+  const [itemDatas,setItemDatas]=useState<itemListDataType[]>([])
 
   const handlePageChange=(num:number)=>{
     setPage(num);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // 부드러운 스크롤 효과를 위해 'smooth' 옵션 사용
+    });
   }
 
+  const handelMoveProductPage=(itemId:number)=>{
+    navigate(`/product/${itemId}`);
+  }
+
+  //서버 연결
   useEffect(() => {
     const getData = async () => {
       try {
         const res = await client.get(`/items`);
-        console.log(res.data.data.itemInfos); // 'res.data'로 서버 응답 데이터 접근
-        setItemListData(res.data.data.itemInfos);
+        setItemDatas(res.data.data.itemInfos);
       } catch (err) {
-        console.error(err); // 에러 로깅
+        console.error(err); 
       }
     };
 
-    getData(); // 함수 호출
+    getData();
   }, []);
+
+  //페이지네이션
+  /*
+  1. 페이지 당 항목 수 정하기
+  2. 전체 배열에서 처음값과 끝값 슬라이싱해서 배열에 넣어놓기
+  */
+  const NUMOFITEMSPERPAGE=10;
+  const startItemIdx=10*(page-1);
+  const endItemIdx=page*NUMOFITEMSPERPAGE;
+  const pageItems=itemDatas.slice(startItemIdx,endItemIdx);
 
   return (
     <S.Container>
       <S.ItemsWrapper>
-        {itemListData.map((item,idx)=>(
-          <S.ItemContainer key={idx}>
+        {pageItems.map((item,idx)=>(
+          <S.ItemContainer key={idx} onClick={()=>handelMoveProductPage(item.itemId)}>
             <S.ItemImg>
               <img src={PRODUCTIMGS[item.itemId]} alt={item.itemName}/>
             </S.ItemImg>
