@@ -1,7 +1,8 @@
 import * as S from './CategoryProductList.style';
 import { PRODUCTIMGS } from '../../../constants/ProductImgs'
 import { IcArrowRight, IcBookmarkDefault, IcChat, IcNew } from '../../../assets/svgs/0_icons';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const CategoryproductList = () => {
   const [page,setPage]=useState(1);
@@ -9,6 +10,23 @@ const CategoryproductList = () => {
   const handlePageChange=(num:number)=>{
     setPage(num);
   }
+  
+  const BASE_URL = import.meta.env.VITE_BASE_URL;
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const res = await axios.get(`${BASE_URL}/items`);
+        console.log(res.data); // 'res.data'로 서버 응답 데이터 접근
+      } catch (err) {
+        console.error(err); // 에러 로깅
+      }
+    };
+  
+    getData(); // 함수 호출
+  }, []);
+  
+
   return (
     <S.Container>
       <S.ItemsWrapper>
