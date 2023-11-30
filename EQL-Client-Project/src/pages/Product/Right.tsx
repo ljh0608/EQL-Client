@@ -22,19 +22,23 @@ const Right = (props: RightProps) => {
   const navigate = useNavigate();
 
   const handleAddCartButtonClick = async () => {
+    addItemToCart();
+    alert('카트에 상품이 추가되었습니다!');
+  };
+
+  const addItemToCart = async () => {
     try {
-      const { data } = await client.put(`/cart/add`, {
+      await client.put(`/cart/add`, {
         memberId: 1,
         itemId: itemId,
       });
-      data && alert('카트에 상품이 추가되었습니다!');
     } catch (err) {
       console.log(err);
     }
   };
 
   const handlePurchaseButtonClick = () => {
-    handleAddCartButtonClick();
+    addItemToCart();
     navigate(`/order/${itemId}`);
   };
 
