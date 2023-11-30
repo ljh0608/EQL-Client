@@ -39,7 +39,7 @@ const Right = (props: RightProps) => {
 
   const handlePurchaseButtonClick = () => {
     addItemToCart();
-    navigate(`/order/${itemId}`);
+    navigate(`/order`);
   };
 
   return (
