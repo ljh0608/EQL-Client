@@ -1,3 +1,4 @@
+
 import * as S from './DropDown.style';
 
 import { Dispatch, SetStateAction } from 'react';
@@ -88,6 +89,7 @@ const DropDown = () => {
         </S.InfoContainer>
       </S.SeasonContainer>
     </S.DropDownContainer>
+
   );
 };
 
