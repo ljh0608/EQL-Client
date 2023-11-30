@@ -7,6 +7,7 @@ import {
   ImgPost11,
 } from '../../../../assets/images';
 import * as S from './ContentWrapper.style';
+import axios from 'axios';
 
 const ContentWrapper = () => {
   return (
