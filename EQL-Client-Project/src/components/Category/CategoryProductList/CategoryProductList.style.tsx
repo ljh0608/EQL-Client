@@ -21,6 +21,7 @@ export const ItemContainer=styled.div`
   flex-direction: column;
   width: 19%;
   min-width: 17.8rem;
+  flex-grow: 1;
 
   &:hover{
     cursor: pointer;
