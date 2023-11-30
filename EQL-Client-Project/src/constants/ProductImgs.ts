@@ -1,12 +1,5 @@
-import {  ImgProduct1,
-  ImgProduct2,
-  ImgProduct3,
-  ImgProduct4,
-  ImgProduct5,
-  ImgProduct6,
-  ImgProduct7,
-  ImgProduct8,
-  ImgProduct9,
+import {
+  ImgProduct1,
   ImgProduct10,
   ImgProduct11,
   ImgProduct12,
@@ -17,6 +10,7 @@ import {  ImgProduct1,
   ImgProduct17,
   ImgProduct18,
   ImgProduct19,
+  ImgProduct2,
   ImgProduct20,
   ImgProduct21,
   ImgProduct22,
@@ -27,11 +21,18 @@ import {  ImgProduct1,
   ImgProduct27,
   ImgProduct28,
   ImgProduct29,
+  ImgProduct3,
+  ImgProduct30,
+  ImgProduct4,
+  ImgProduct5,
+  ImgProduct6,
+  ImgProduct7,
+  ImgProduct8,
+  ImgProduct9,
+} from '../assets/images/0_images.ts';
 
-  ImgProduct30 } from "../assets/images/0_images.ts";
-
-export const PRODUCTIMGS=[
-  "0번째 이미지 없음",
+export const PRODUCTIMGS = [
+  '0번째 이미지 없음',
   ImgProduct1,
   ImgProduct2,
   ImgProduct3,
@@ -61,5 +62,5 @@ export const PRODUCTIMGS=[
   ImgProduct27,
   ImgProduct28,
   ImgProduct29,
-  ImgProduct30
-]
+  ImgProduct30,
+];

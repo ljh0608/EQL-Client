@@ -4,7 +4,6 @@ import { IcCheckboxPayment } from '../../../assets/svgs/0_icons';
 import { IcCheckboxPaymentChecked } from '../../../assets/svgs/0_icons';
 import { IcOption } from '../../../assets/svgs/0_icons';
 import { IcOrderCheckboxPayment } from '../../../assets/svgs/0_icons';
-import { IcOrderCheckboxPaymentChecked } from '../../../assets/svgs/0_icons';
 import LightHr from '../LightHr/LightHr';
 import OrderHeader from '../OrderHeader/OrderHeader';
 import { OtherPaymentMethods } from '../../../constants/OtherPaymentMethods';
