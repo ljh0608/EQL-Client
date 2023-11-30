@@ -1,4 +1,3 @@
-
 import * as S from './Home.style';
 
 import { IcNext, IcPrevious } from '../../assets/svgs/0_icons';
@@ -54,4 +53,3 @@ export default function Home() {
     </S.HomeView>
   );
 }
-

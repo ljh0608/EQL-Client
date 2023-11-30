@@ -69,7 +69,7 @@ export const Price = styled.p`
   ${({ theme }) => theme.fonts.title4};
 `;
 
-export const CouponBtn = styled.div`
+export const CouponBtn = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +175,7 @@ export const Line = styled.div`
 `;
 
 //드롭다운 옵션 영역
-export const DropBox = styled.div`
+export const DropBox = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -224,14 +224,14 @@ export const TotalPrice = styled.p`
 `;
 
 //버튼 영역
-export const ButtonWrapper = styled.button`
+export const ButtonWrapper = styled.div`
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: center;
 `;
 
-export const Button = styled.div`
+export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
