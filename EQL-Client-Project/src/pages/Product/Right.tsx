@@ -6,15 +6,38 @@ import {
   IcMinus,
   IcArrowDropdown,
 } from '../../assets/svgs/0_icons';
+import { client } from '../../utils/api/axios';
+import { useNavigate } from 'react-router-dom';
 
 interface RightProps {
   brandName: string;
   itemName: string;
   price: number;
+  itemId: number;
 }
 
 const Right = (props: RightProps) => {
-  const { brandName, itemName, price } = props;
+  const { brandName, itemName, price, itemId } = props;
+
+  const navigate = useNavigate();
+
+  const handleAddCartButtonClick = async () => {
+    try {
+      const { data } = await client.put(`/cart/add`, {
+        memberId: 1,
+        itemId: itemId,
+      });
+      data && alert('카트에 상품이 추가되었습니다!');
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const handlePurchaseButtonClick = () => {
+    handleAddCartButtonClick();
+    navigate(`/order/${itemId}`);
+  };
+
   return (
     <S.RightContainer>
       <S.RightHeader>
@@ -90,10 +113,10 @@ const Right = (props: RightProps) => {
       </S.TotalPriceWrapper>
 
       <S.ButtonWrapper>
-        <S.Button type="button" className="cart">
+        <S.Button type="button" className="cart" onClick={handleAddCartButtonClick}>
           장바구니에 담기
         </S.Button>
-        <S.Button type="button" className="order">
+        <S.Button type="button" className="order" onClick={handlePurchaseButtonClick}>
           바로 구매하기
         </S.Button>
       </S.ButtonWrapper>

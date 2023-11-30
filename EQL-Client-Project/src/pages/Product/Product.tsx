@@ -43,8 +43,8 @@ const Product = () => {
         <S.Category className="selected">스웨트 셔츠 / 후디</S.Category>
       </S.CategoryBar>
       <S.MainContainer>
-        <Left itemId={itemId} />
-        <Right brandName={brandName} itemName={itemName} price={price} />
+        <Left itemId={itemId} brandName={brandName} />
+        <Right brandName={brandName} itemName={itemName} price={price} itemId={itemId} />
       </S.MainContainer>
     </S.ProductContainer>
   );

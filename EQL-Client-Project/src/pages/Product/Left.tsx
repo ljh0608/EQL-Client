@@ -5,10 +5,11 @@ import { PRODUCTIMGS } from '../../constants/ProductImgs';
 
 interface LeftProps {
   itemId: number;
+  brandName: string;
 }
 
 const Left = (props: LeftProps) => {
-  const { itemId } = props;
+  const { itemId, brandName } = props;
 
   return (
     <S.LeftContainer>
@@ -33,8 +34,8 @@ const Left = (props: LeftProps) => {
         <S.BrandInfo>
           <IcBrandImg />
           <S.BrandNameWrapper>
-            <S.BrandName>MSCHF</S.BrandName>
-            <S.BrandName className="korean">미스치프</S.BrandName>
+            <S.BrandName>{brandName}</S.BrandName>
+            <S.BrandName className="korean">{brandName}</S.BrandName>
           </S.BrandNameWrapper>
         </S.BrandInfo>
         <S.BookmarkLogo />
@@ -42,7 +43,7 @@ const Left = (props: LeftProps) => {
         <S.BrandDetail>
           미스치프는 한국의 서브컬처에 기반한 스트릿 캐주얼브랜드이다. 다양한 브랜드 및 아티스트와의
           협업을 통해 패션 필드에 국한되지 않은 폭넓은 범위의 문화활동을 지향하며 로컬컬쳐신을
-          서포트한다. 2010년 핸드메이드 가방 ...
+          서포트한다. 2010년 핸드메이드 ...
         </S.BrandDetail>
       </S.BrandInfoWrapper>
 
