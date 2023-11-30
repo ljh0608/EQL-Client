@@ -12,8 +12,8 @@ function Router() {
         <Route path="/" element={<Home />} />
         <Route path="/category" element={<Category />} />
         <Route path="/product/:productId" element={<Product />} />
-        <Route path="/order/:productId" element={<Order />} />
-        <Route path="/*" element={<Home/>} />
+        <Route path="/order" element={<Order />} />
+        <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
     </BrowserRouter>
   );
