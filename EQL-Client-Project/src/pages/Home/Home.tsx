@@ -1,46 +1,55 @@
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import styled from 'styled-components';
-import { IcPrevious, IcNext } from '../../assets/svgs/0_icons';
+import * as S from './Home.style';
 
-const Home = () => {
+import { IcNext, IcPrevious } from '../../assets/svgs/0_icons';
+
+import Content from '../../components/home/Content/ContentContainer/Content';
+import ContentWrapper from '../../components/home/Content/ContentWrapper/ContentWrapper';
+import SectionContainer from '../../components/home/Section/SectionContainer/SectionContainer';
+import SectionWrapper from '../../components/home/Section/SectionWrapper/SectionWrapper';
+import SectionLayout from '../../components/home/Section/SectionLayout/SectionLayout';
+import { CarouselFirstImg, CarouselSecondImg, CarouselThirdImg } from '../../assets/images';
+import BannerContainer from '../../components/home/Banner/Banner';
+
+export default function Home() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
+    nextArrow: <IcNext />,
+    prevArrow: <IcPrevious />,
     slidesToShow: 1,
     slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '25%',
   };
 
   return (
-    <St.CarouselBox {...settings}>
-      <div>
-        <St.CarouselImg src="../../src/assets/images/CarouselFirstImg.png"></St.CarouselImg>
-      </div>
-      <div>
-        <St.CarouselImg src="../../src/assets/images/CarouselSecondImg.png"></St.CarouselImg>
-      </div>
-      <div>
-        <St.CarouselImg src="../../src/assets/images/CarouselThirdImg.png"></St.CarouselImg>
-      </div>
-    </St.CarouselBox>
+    <S.HomeView>
+      <S.CarouselContainer>
+        <S.CarouselLeftBox />
+        <S.CarouselStyle>
+          <S.SliderBox {...settings}>
+            <div>
+              <S.CarouselImgWrapper src={CarouselFirstImg} alt="LeftImg" />
+            </div>
+            <div>
+              <S.CarouselImgWrapper src={CarouselSecondImg} alt="MainImg" />
+            </div>
+            <div>
+              <S.CarouselImgWrapper src={CarouselThirdImg} alt="RightImg" />
+            </div>
+          </S.SliderBox>
+          <S.CarouselRightBox />
+        </S.CarouselStyle>
+
+        <BannerContainer />
+      </S.CarouselContainer>
+
+      <Content />
+      <ContentWrapper />
+      <SectionContainer />
+      <SectionWrapper />
+      <SectionLayout />
+    </S.HomeView>
   );
-};
-
-const St = {
-  CarouselBox: styled(Slider)`
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 44.8rem;
-  `,
-  CarouselImg: styled.img`
-    display: flex;
-    justify-content: center;
-    width: 65.9rem;
-    height: 44.8rem;
-  `,
-};
-
-export default Home;
+}

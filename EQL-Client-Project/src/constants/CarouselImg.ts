@@ -1,23 +1,21 @@
-import { CarouselFirstImg, CarouselSecondImg, CarouselThirdImg } from '../assets/images/0_images';
+import { IcNext, IcPrevious } from "../assets/svgs/0_icons";
+const NextArrow = () => {
+  return (
+   <IcNext/>
+  );
+}
+const PrevArrow = ()  => {
+  return (
+    <IcPrevious/>
+      
+    />
+  );
+}
 
-const imageData = [
-  {
-    label: 'Image 1',
-    alt: 'image1',
-    Image: CarouselFirstImg,
-  },
-
-  {
-    label: 'Image 2',
-    alt: 'image2',
-    Image: CarouselSecondImg,
-  },
-
-  {
-    label: 'Image 3',
-    alt: 'image3',
-    Image: CarouselThirdImg,
-  },
-];
-
-export default imageData;
+export default class CustomArrows extends Component {
+  render() {
+    const settings = {
+      ...
+      nextArrow: <NextArrow />,
+      prevArrow: <PrevArrow />
+    };

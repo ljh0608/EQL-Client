@@ -28,9 +28,6 @@ import ImgProduct27 from './ImgProduct27.png';
 import ImgProduct28 from './ImgProduct28.png';
 import ImgProduct29 from './ImgProduct29.png';
 import ImgProduct30 from './ImgProduct30.png';
-import CarouselFirstImg from './CarouselFirstImg.png';
-import CarouselSecondImg from './CarouselSecondImg.png';
-import CarouselThirdImg from './CarouselThirdImg.png';
 
 export {
   ImgProduct1,
@@ -63,7 +60,4 @@ export {
   ImgProduct28,
   ImgProduct29,
   ImgProduct30,
-  CarouselFirstImg,
-  CarouselSecondImg,
-  CarouselThirdImg,
 };
