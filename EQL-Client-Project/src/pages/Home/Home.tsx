@@ -27,20 +27,18 @@ export default function Home() {
     <S.HomeView>
       <S.CarouselContainer>
         <S.CarouselLeftBox />
-        <S.CarouselStyle>
-          <S.SliderBox {...settings}>
-            <div>
-              <S.CarouselImgWrapper src={CarouselFirstImg} alt="LeftImg" />
-            </div>
-            <div>
-              <S.CarouselImgWrapper src={CarouselSecondImg} alt="MainImg" />
-            </div>
-            <div>
-              <S.CarouselImgWrapper src={CarouselThirdImg} alt="RightImg" />
-            </div>
-          </S.SliderBox>
-          <S.CarouselRightBox />
-        </S.CarouselStyle>
+        <S.SliderBox {...settings}>
+          <div>
+            <S.CarouselImgWrapper src={CarouselFirstImg} alt="LeftImg" />
+          </div>
+          <div>
+            <S.CarouselImgWrapper src={CarouselSecondImg} alt="MainImg" />
+          </div>
+          <div>
+            <S.CarouselImgWrapper src={CarouselThirdImg} alt="RightImg" />
+          </div>
+        </S.SliderBox>
+        <S.CarouselRightBox />
 
         <BannerContainer />
       </S.CarouselContainer>

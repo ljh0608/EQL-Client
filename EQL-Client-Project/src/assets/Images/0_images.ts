@@ -1,12 +1,4 @@
 import ImgProduct1 from './ImgProduct1.png';
-import ImgProduct2 from './ImgProduct2.png';
-import ImgProduct3 from './ImgProduct3.png';
-import ImgProduct4 from './ImgProduct4.png';
-import ImgProduct5 from './ImgProduct5.png';
-import ImgProduct6 from './ImgProduct6.png';
-import ImgProduct7 from './ImgProduct7.png';
-import ImgProduct8 from './ImgProduct8.png';
-import ImgProduct9 from './ImgProduct9.png';
 import ImgProduct10 from './ImgProduct10.png';
 import ImgProduct11 from './ImgProduct11.png';
 import ImgProduct12 from './ImgProduct12.png';
@@ -17,6 +9,7 @@ import ImgProduct16 from './ImgProduct16.png';
 import ImgProduct17 from './ImgProduct17.png';
 import ImgProduct18 from './ImgProduct18.png';
 import ImgProduct19 from './ImgProduct19.png';
+import ImgProduct2 from './ImgProduct2.png';
 import ImgProduct20 from './ImgProduct20.png';
 import ImgProduct21 from './ImgProduct21.png';
 import ImgProduct22 from './ImgProduct22.png';
@@ -27,7 +20,14 @@ import ImgProduct26 from './ImgProduct26.png';
 import ImgProduct27 from './ImgProduct27.png';
 import ImgProduct28 from './ImgProduct28.png';
 import ImgProduct29 from './ImgProduct29.png';
+import ImgProduct3 from './ImgProduct3.png';
 import ImgProduct30 from './ImgProduct30.png';
+import ImgProduct4 from './ImgProduct4.png';
+import ImgProduct5 from './ImgProduct5.png';
+import ImgProduct6 from './ImgProduct6.png';
+import ImgProduct7 from './ImgProduct7.png';
+import ImgProduct8 from './ImgProduct8.png';
+import ImgProduct9 from './ImgProduct9.png';
 
 export {
   ImgProduct1,
