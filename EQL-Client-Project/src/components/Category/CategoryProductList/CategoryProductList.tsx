@@ -34,8 +34,8 @@ const CategoryproductList = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await client.get(`/items`);
-        setItemDatas(res.data.data.itemInfos);
+        const {data} = await client.get(`/items`);
+        setItemDatas(data.data.itemInfos);
       } catch (err) {
         console.error(err); 
       }
