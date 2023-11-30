@@ -1,3 +1,4 @@
+
 import * as S from './Header.style';
 
 import {
@@ -13,13 +14,16 @@ import {
 import { IcArrow } from '../../assets/svgs/0_icons';
 
 const Header = () => {
+
   return (
     <S.MainHeaderWrapper>
+
       <S.MainHeader>
         <S.HeaderContainer>
           <IcEqlLogo />
           <S.HeaderWrapper>
             <S.HeaderLayout>
+
               <S.HeaderWomen>
                 WOMEN1
                 <S.DropDownContainer>
@@ -104,6 +108,7 @@ const Header = () => {
                     </S.InfoContainer>
                   </S.SeasonContainer>
                 </S.DropDownContainer>
+
               </S.HeaderWomen>
 
               <S.HeaderText>MEN</S.HeaderText>
@@ -128,8 +133,10 @@ const Header = () => {
           <IcCart />
         </S.HeaderBox>
       </S.MainHeader>
+
       {/* <S.StyledDropDown /> */}
     </S.MainHeaderWrapper>
+
   );
 };
 

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 export const MainHeader = styled.header`
   display: flex;
   align-items: center;
@@ -9,6 +8,7 @@ export const MainHeader = styled.header`
   height: 10rem;
   padding: 2.7rem 2.3rem 2.6rem 2.3rem;
 `;
+
 
 export const DropDownContainer = styled.section`
   position: absolute;
@@ -25,6 +25,7 @@ export const DropDownContainer = styled.section`
 
   background-color: ${({ theme }) => theme.colors.white};
 `;
+
 export const HeaderContainer = styled.header`
   display: flex;
   gap: 2.7rem;
@@ -55,6 +56,7 @@ export const HeaderBox = styled.section`
   gap: 3.4rem;
   justify-content: space-between;
 `;
+
 export const HeaderWomen = styled.div`
   ${({ theme }) => theme.fonts.body10};
 
@@ -70,6 +72,7 @@ export const HeaderWomen = styled.div`
   &:hover ${DropDownContainer} {
     display: flex;
   }
+
   &:hover {
     color: ${({ theme }) => theme.colors.black};
   }
@@ -86,6 +89,7 @@ export const HeaderNotice = styled.h3`
 
   color: ${({ theme }) => theme.colors.red};
 `;
+
 
 export const MainHeaderWrapper = styled.div`
   position: relative;
@@ -162,3 +166,4 @@ export const InfoText = styled.div`
 
   color: ${({ theme }) => theme.colors.grey2};
 `;
+

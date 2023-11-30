@@ -1,4 +1,7 @@
+
+
 import * as S from './DropDown.style';
+
 
 import { IcArrow } from '../../../assets/svgs/0_icons';
 
@@ -86,6 +89,7 @@ const DropDown = () => {
         </S.InfoContainer>
       </S.SeasonContainer>
     </S.DropDownContainer>
+
   );
 };
 
