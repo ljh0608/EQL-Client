@@ -1,3 +1,4 @@
+
 import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -60,3 +61,4 @@ export const CarouselRightBox = styled.div`
 
   background-color: rgba(0, 0, 0, 0.4);
 `;
+
