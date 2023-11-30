@@ -30,10 +30,24 @@ import IcSearch from './IcSearch.svg?react';
 import IcSmallStarRed from './IcSmallStarRed.svg?react';
 import IcSmallstarGray from './IcSmallstarGray.svg?react';
 import IcUndo from './IcUndo.svg?react';
+
+import IcEqlLogo from './IcEqlLogo.svg?react';
+import IcCart from './IcCart.svg?react';
+import IcLine from './IcLine.svg?react';
+import IcPrevious from './IcPrevious.svg?react';
+import IcNext from './IcNext.svg?react';
+import IcArrowBlackRight from './IcArrowBlackRight.svg?react';
+import IcBar from './IcBar.svg?react';
+
+import IcArrowBreadCrumb from './IcArrowBreadcrumb.svg?react';
+import IcBrandImg from './IcBrandImg.svg?react';
+import IcNew from './IcNew.svg?react';
+
 import IcEqlLogo from './IcEqlLogo.svg?react';
 import IcCart from './IcCart.svg?react';
 import IcLine from './IcLine.svg?react';
 import IcArrowUpLinear from './IcArrowUpLinear.svg?react';
+
 
 export {
   IcArrow,
@@ -68,11 +82,24 @@ export {
   IcEqlLogo,
   IcCart,
   IcLine,
+  IcArrowBreadCrumb,
+  IcBrandImg,
+  IcOrderArrowRight,
+  IcNew,
+  IcPrevious,
+  IcNext,
+  IcArrowBlackRight,
+
+
+  IcEqlLogo,
+  IcCart,
+  IcLine,
 
   IcArrowBreadCrumb,
   IcBrandImg,
   IcOrderArrowRight,
   IcArrowUpLinear,
   IcNew,
+
 
 };
