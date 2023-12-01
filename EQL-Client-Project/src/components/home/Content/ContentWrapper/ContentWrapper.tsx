@@ -31,7 +31,7 @@ const ContentWrapper = () => {
       <S.ContentWrapper>
         {contentData.map((eachContent) => (
           <S.ContentLayout key={eachContent.contentId}>
-            <S.ContentImg src={`src/assets/Images/ImgPost${eachContent.contentId}.png`} />
+            <S.ContentImg src={`/assets/Images/ImgPost${eachContent.contentId}.png`} />
             <S.ContentBox>
               <S.ContentLayoutText>
                 <S.ContentLayoutTitle>{eachContent.title}</S.ContentLayoutTitle>
