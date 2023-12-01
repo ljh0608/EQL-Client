@@ -130,8 +130,6 @@ const Header = () => {
           <IcCart onClick={() => navigate('/order')} />
         </S.HeaderBox>
       </S.MainHeader>
-
-      {/* <S.StyledDropDown /> */}
     </S.MainHeaderWrapper>
   );
 };

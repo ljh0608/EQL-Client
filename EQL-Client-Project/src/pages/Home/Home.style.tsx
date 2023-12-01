@@ -14,7 +14,6 @@ export const CarouselContainer = styled.main`
   height: 100%;
   padding-bottom: 17.2rem;
 `;
-export const CarouselStyle = styled.div``;
 export const SliderBox = styled(Slider)`
   .slick-prev {
     position: absolute;
