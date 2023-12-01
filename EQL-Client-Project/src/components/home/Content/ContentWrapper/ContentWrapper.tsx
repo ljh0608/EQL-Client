@@ -1,7 +1,9 @@
 import * as S from './ContentWrapper.style';
-import { client } from '../../../../utils/api/axios';
-import { useState, useEffect } from 'react';
 
+import { useEffect, useState } from 'react';
+
+import { client } from '../../../../utils/api/axios';
+//build test
 type ContentDataType = {
   contentId: number;
   title: string;
