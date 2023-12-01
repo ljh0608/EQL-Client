@@ -26,32 +26,34 @@ const ContentWrapper = () => {
     };
     getData();
   }, []);
-
-  return (
-    <>
-      {contentData && (
-        <S.ContentWrapper>
-          {contentData.map((eachContent) => (
-            <S.ContentLayout key={eachContent.contentId}>
-              <S.ContentImg src={`/assets/Images/ImgPost${eachContent?.contentId}.png`} />
-              <S.ContentBox>
-                <S.ContentLayoutText>
-                  <S.ContentLayoutTitle>{eachContent.title}</S.ContentLayoutTitle>
-                  <S.ContentLayoutSubtitle>{eachContent.description}</S.ContentLayoutSubtitle>
-                </S.ContentLayoutText>
-                <S.ContentLayoutKeyword>
-                  {eachContent.tags.map((eachTag) => (
-                    <S.KeywordElement key={eachTag}>{eachTag}</S.KeywordElement>
-                  ))}
-                </S.ContentLayoutKeyword>
-              </S.ContentBox>
-            </S.ContentLayout>
-          ))}
-        </S.ContentWrapper>
-      )}
-      ∂∂
-    </>
-  );
+  if (!contentData) {
+    return <div>loading...</div>;
+  } else {
+    return (
+      <>
+        {contentData && (
+          <S.ContentWrapper>
+            {contentData.map((eachContent) => (
+              <S.ContentLayout key={eachContent.contentId}>
+                <S.ContentImg src={`assets/Images/ImgPost${eachContent?.contentId}.png`} />
+                <S.ContentBox>
+                  <S.ContentLayoutText>
+                    <S.ContentLayoutTitle>{eachContent.title}</S.ContentLayoutTitle>
+                    <S.ContentLayoutSubtitle>{eachContent.description}</S.ContentLayoutSubtitle>
+                  </S.ContentLayoutText>
+                  <S.ContentLayoutKeyword>
+                    {eachContent.tags.map((eachTag) => (
+                      <S.KeywordElement key={eachTag}>{eachTag}</S.KeywordElement>
+                    ))}
+                  </S.ContentLayoutKeyword>
+                </S.ContentBox>
+              </S.ContentLayout>
+            ))}
+          </S.ContentWrapper>
+        )}
+      </>
+    );
+  }
 };
 
 export default ContentWrapper;
