@@ -1,13 +1,13 @@
+import * as S from './ContentWrapper.style';
+
 import {
   ImgPost1,
+  ImgPost11,
   ImgPost2,
   ImgPost3,
   ImgPost4,
   ImgPost5,
-  ImgPost11,
-} from '../../../../assets/images';
-import * as S from './ContentWrapper.style';
-import axios from 'axios';
+} from '../../../../assets/Images';
 
 const ContentWrapper = () => {
   return (

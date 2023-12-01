@@ -12,7 +12,6 @@ type DeliveryInfo = {
   postalCode: number;
 };
 const DeliveryInfo = ({ memberName, phoneNumber, address, postalCode }: DeliveryInfo) => {
-  console.log(memberName);
   return (
     <S.DeliveryInfoWrapper>
       <OrderHeader>배송 정보</OrderHeader>

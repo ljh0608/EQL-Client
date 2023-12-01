@@ -13,7 +13,7 @@ export const OrderInfoWrapper = styled.div`
   margin: 2rem 0;
 `;
 
-export const TempImgDiv = styled.div`
+export const TempImgDiv = styled.img`
   width: 12rem;
   height: 16rem;
 `;
@@ -21,7 +21,7 @@ export const TempImgDiv = styled.div`
 export const OrderInfoContiner = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 64.2rem;
 `;
 export const BrandText = styled.p`
   ${({ theme }) => theme.fonts.body6};

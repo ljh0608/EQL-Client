@@ -11,17 +11,19 @@ import {
 } from '../../assets/svgs/0_icons';
 
 import { IcArrow } from '../../assets/svgs/0_icons';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <S.MainHeaderWrapper>
       <S.MainHeader>
         <S.HeaderContainer>
-          <IcEqlLogo />
+          <IcEqlLogo onClick={() => navigate('/')} />
           <S.HeaderWrapper>
             <S.HeaderLayout>
-              <S.HeaderWomen>
-                WOMEN1
+              <S.HeaderWomen onClick={() => navigate('/category')}>
+                WOMEN
                 <S.DropDownContainer>
                   <S.CategoryContainer>
                     <S.CategoryWrapper>
@@ -38,7 +40,7 @@ const Header = () => {
                     </S.CategoryWrapper>
                   </S.CategoryContainer>
                   <S.ClothesContainer>
-                    <S.CategoryLayout>
+                    <S.CategoryLayout onClick={() => navigate('/category')}>
                       의류
                       <IcArrow />
                     </S.CategoryLayout>
@@ -125,7 +127,7 @@ const Header = () => {
           <IcJoin />
           <IcLogin />
           <IcMypage />
-          <IcCart />
+          <IcCart onClick={() => navigate('/order')} />
         </S.HeaderBox>
       </S.MainHeader>
 

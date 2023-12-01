@@ -1,14 +1,14 @@
 import * as S from './Home.style';
 
+import { CarouselFirstImg, CarouselSecondImg, CarouselThirdImg } from '../../assets/Images';
 import { IcNext, IcPrevious } from '../../assets/svgs/0_icons';
 
+import BannerContainer from '../../components/home/Banner/Banner';
 import Content from '../../components/home/Content/ContentContainer/Content';
 import ContentWrapper from '../../components/home/Content/ContentWrapper/ContentWrapper';
 import SectionContainer from '../../components/home/Section/SectionContainer/SectionContainer';
-import SectionWrapper from '../../components/home/Section/SectionWrapper/SectionWrapper';
 import SectionLayout from '../../components/home/Section/SectionLayout/SectionLayout';
-import { CarouselFirstImg, CarouselSecondImg, CarouselThirdImg } from '../../assets/images';
-import BannerContainer from '../../components/home/Banner/Banner';
+import SectionWrapper from '../../components/home/Section/SectionWrapper/SectionWrapper';
 
 export default function Home() {
   const settings = {

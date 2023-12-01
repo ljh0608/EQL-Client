@@ -2,6 +2,7 @@ import * as S from './OrderProductInfo.style';
 
 import LightHr from '../LightHr/LightHr';
 import OrderHeader from '../OrderHeader/OrderHeader';
+import { PRODUCTIMGS } from '../../../constants/ProductImgs';
 import Spacing from '../../common/spacing/Spacing';
 import { regPrice } from '../../../utils/regPrice';
 
@@ -20,7 +21,7 @@ type OrderProductInfoTypes = {
 };
 const OrderProductInfo = ({ itemInfo }: OrderProductInfoTypes) => {
   const { totalItemsAmount, itemSummaries } = itemInfo;
-  console.log(itemSummaries);
+  console.log(itemInfo);
   return (
     <S.OrderWrapper>
       <OrderHeader orderCount={totalItemsAmount}>주문 상품 정보</OrderHeader>
@@ -28,7 +29,7 @@ const OrderProductInfo = ({ itemInfo }: OrderProductInfoTypes) => {
       {itemSummaries.map((item, index) => {
         return (
           <S.OrderInfoWrapper key={index}>
-            <S.TempImgDiv></S.TempImgDiv>
+            <S.TempImgDiv src={PRODUCTIMGS[item.itemId]} alt={item.itemName}></S.TempImgDiv>
             <S.OrderInfoContiner>
               <S.BrandText>{item.brandName}</S.BrandText>
               <S.Body7>[11/08(수) 예약배송] {item.itemName} (BLACK)</S.Body7>
