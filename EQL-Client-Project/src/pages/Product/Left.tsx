@@ -1,6 +1,8 @@
 import * as S from './Left.style';
+
 import { IcArrow, IcBrandImg, IcPlus } from '../../assets/svgs/0_icons';
-import { RecommendFirstImg, RecommendSecondImg } from '../../assets/images';
+import { RecommendFirstImg, RecommendSecondImg } from '../../assets/Images';
+
 import { PRODUCTIMGS } from '../../constants/ProductImgs';
 
 interface LeftProps {
