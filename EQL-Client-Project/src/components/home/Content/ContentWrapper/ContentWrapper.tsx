@@ -2,6 +2,7 @@ import * as S from './ContentWrapper.style';
 
 import { useEffect, useState } from 'react';
 
+import { PRODUCTPOSTIMG } from '../../../../constants/HomeContent';
 import { client } from '../../../../utils/api/axios';
 
 //build test
@@ -35,7 +36,7 @@ const ContentWrapper = () => {
           <S.ContentWrapper>
             {contentData.map((eachContent) => (
               <S.ContentLayout key={eachContent.contentId}>
-                <S.ContentImg src={`assets/Images/ImgPost${eachContent?.contentId}.png`} />
+                <S.ContentImg src={PRODUCTPOSTIMG[eachContent?.contentId]} />
                 <S.ContentBox>
                   <S.ContentLayoutText>
                     <S.ContentLayoutTitle>{eachContent.title}</S.ContentLayoutTitle>

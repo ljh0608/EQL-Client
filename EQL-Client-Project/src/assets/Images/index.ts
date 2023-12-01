@@ -32,6 +32,7 @@ export { ImgPost2 };
 export { ImgPost3 };
 export { ImgPost4 };
 export { ImgPost5 };
+
 export { ImgRec1 };
 export { ImgRec2 };
 export { ImgRec3 };
