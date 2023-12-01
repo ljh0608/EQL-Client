@@ -22,6 +22,8 @@ const Product = () => {
   });
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+
     const getProductData = async (ItemId: number) => {
       try {
         const { data } = await client.get<ProductProps>(`/item/${ItemId}`);
