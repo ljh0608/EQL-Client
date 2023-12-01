@@ -24,7 +24,6 @@ const ContentWrapper = () => {
     getData();
   }, []);
 
-  console.log(contentData);
   return (
     <>
       <S.ContentWrapper>

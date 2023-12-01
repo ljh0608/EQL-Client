@@ -55,7 +55,7 @@ const Right = (props: RightProps) => {
       <S.ItemTitle>{itemName}</S.ItemTitle>
 
       <S.PriceWrapper>
-        <S.Price>{price}</S.Price>
+        <S.Price>{price.toLocaleString()}</S.Price>
         <S.CouponBtn type="button">쿠폰 받기</S.CouponBtn>
       </S.PriceWrapper>
 
@@ -113,7 +113,7 @@ const Right = (props: RightProps) => {
 
       <S.TotalPriceWrapper>
         <S.TotalPriceText>총 상품 금액</S.TotalPriceText>
-        <S.TotalPrice>{price}</S.TotalPrice>
+        <S.TotalPrice>{price.toLocaleString()}</S.TotalPrice>
       </S.TotalPriceWrapper>
 
       <S.ButtonWrapper>
