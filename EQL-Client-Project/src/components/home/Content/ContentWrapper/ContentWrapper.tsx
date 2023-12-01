@@ -7,7 +7,7 @@ import {
   ImgPost3,
   ImgPost4,
   ImgPost5,
-} from '../../../../assets/Images';
+} from '../../../../assets/Images/index.ts';
 
 const ContentWrapper = () => {
   return (
