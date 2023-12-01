@@ -9,9 +9,9 @@ export const MainHeader = styled.header`
   padding: 2.7rem 2.3rem 2.6rem 2.3rem;
 `;
 
-
 export const DropDownContainer = styled.section`
   position: absolute;
+  z-index: 1000;
   top: 10rem;
   left: 0;
 
@@ -90,7 +90,6 @@ export const HeaderNotice = styled.h3`
   color: ${({ theme }) => theme.colors.red};
 `;
 
-
 export const MainHeaderWrapper = styled.div`
   position: relative;
 `;
@@ -166,4 +165,3 @@ export const InfoText = styled.div`
 
   color: ${({ theme }) => theme.colors.grey2};
 `;
-
