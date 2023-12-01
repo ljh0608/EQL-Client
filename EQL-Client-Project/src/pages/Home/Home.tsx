@@ -26,7 +26,6 @@ export default function Home() {
   return (
     <S.HomeView>
       <S.CarouselContainer>
-        <S.CarouselLeftBox />
         <S.SliderBox {...settings}>
           <div>
             <S.CarouselImgWrapper src={CarouselFirstImg} alt="LeftImg" />
@@ -38,7 +37,6 @@ export default function Home() {
             <S.CarouselImgWrapper src={CarouselThirdImg} alt="RightImg" />
           </div>
         </S.SliderBox>
-        <S.CarouselRightBox />
 
         <BannerContainer />
       </S.CarouselContainer>
