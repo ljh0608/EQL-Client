@@ -66,7 +66,7 @@ export const ButtonWrapper = styled.div`
   margin: 8.7rem 0 12.8rem;
 `;
 
-export const Button = styled.div`
+export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,6 +144,7 @@ export const BrandDetail = styled.article`
   padding: 1.8rem 3.1rem 1.6rem 3rem;
 
   color: ${({ theme }) => theme.colors.black};
+  word-break: keep-all;
   ${({ theme }) => theme.fonts.body9};
 `;
 
@@ -249,7 +250,7 @@ export const TabBox = styled.div`
   margin: 12.8rem 0 8.9rem;
 `;
 
-export const Tab = styled.div`
+export const Tab = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -295,6 +296,7 @@ export const RecommendItemWrapper = styled.div`
 `;
 
 export const RecommendItem = styled.div`
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   width: 16.2rem;

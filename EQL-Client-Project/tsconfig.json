@@ -21,7 +21,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true, //console에서 경로 보이도록
-    "allowSyntheticDefaultImports": true //ts에서 Synthetic기본 import허용
+    "allowSyntheticDefaultImports": true, //ts에서 Synthetic기본 import허용
+    "typeRoots": ["src/types/image.d.ts"]
   },
   "include": ["src", "src/svg.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]

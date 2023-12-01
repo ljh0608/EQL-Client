@@ -3,8 +3,12 @@ import * as S from './PaymentInfo.style';
 import { IcArrowDown } from '../../../assets/svgs/0_icons';
 import { IcOrderCheckboxPayment } from '../../../assets/svgs/0_icons';
 import Spacing from '../../common/spacing/Spacing';
+import { regPrice } from '../../../utils/regPrice';
 
-const PaymentInfo = () => {
+type PaymentInfoType = {
+  totalPrice: number;
+};
+const PaymentInfo = ({ totalPrice }: PaymentInfoType) => {
   return (
     <S.PaymentInfoWrapper>
       <S.PaymentInfoContainer>
@@ -15,7 +19,7 @@ const PaymentInfo = () => {
         <S.PaymentTopWrapper>
           <S.PaymentTextWrapper>
             <S.PaymentTextKey>총 상품금액</S.PaymentTextKey>
-            <S.PaymentTextValue>58,000원</S.PaymentTextValue>
+            <S.PaymentTextValue>{regPrice(totalPrice)}원</S.PaymentTextValue>
           </S.PaymentTextWrapper>
           <S.PaymentTextWrapper>
             <S.PaymentTextKey>총 배송비</S.PaymentTextKey>
@@ -48,7 +52,7 @@ const PaymentInfo = () => {
         <Spacing $spacing="2.2" />
         <S.PaymentTextWrapper>
           <S.FinalFeeText>총 결제 금액</S.FinalFeeText>
-          <S.FinalFeeText>61,000원</S.FinalFeeText>
+          <S.FinalFeeText>{regPrice(totalPrice + 3000)}원</S.FinalFeeText>
         </S.PaymentTextWrapper>
         <Spacing $spacing="3.4" />
         <S.AgreeTermContainer>
@@ -60,7 +64,7 @@ const PaymentInfo = () => {
         </S.AgreeTermContainer>
         <Spacing $spacing="5.2" />
       </S.PaymentInfoContainer>
-      <S.PaymentBtn>61,000원 결제하기</S.PaymentBtn>
+      <S.PaymentBtn>{regPrice(totalPrice + 3000)}원 결제하기</S.PaymentBtn>
     </S.PaymentInfoWrapper>
   );
 };

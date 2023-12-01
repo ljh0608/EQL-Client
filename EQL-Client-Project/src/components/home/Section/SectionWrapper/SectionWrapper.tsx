@@ -1,6 +1,8 @@
 import * as S from './SectionWrapper.style';
-import { ImgPost7 } from '../../../../assets/images';
+
 import { IcBar, IcNext, IcPrevious } from '../../../../assets/svgs/0_icons';
+
+import { ImgPost7 } from '../../../../assets/Images';
 
 const SectionWrapper = () => {
   return (
