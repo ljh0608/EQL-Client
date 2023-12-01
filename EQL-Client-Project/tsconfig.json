@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "outDir": "./dist", //컴파일시  ts파일을 dist폴더에 js파일로 변경
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true, //console에서 경로 보이도록
+    "allowSyntheticDefaultImports": true, //ts에서 Synthetic기본 import허용
+    "typeRoots": ["src/types/image.d.ts"]
+  },
+  "include": ["src", "src/svg.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
