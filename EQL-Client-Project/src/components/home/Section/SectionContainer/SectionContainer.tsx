@@ -1,3 +1,5 @@
+import * as S from './SectionContainer.style';
+
 import {
   ImgRec1,
   ImgRec2,
@@ -6,9 +8,10 @@ import {
   ImgRec5,
   ImgRec6,
   ImgRec7,
-} from '../../../../assets/images';
-import * as S from './SectionContainer.style';
+} from '../../../../assets/Images';
+
 import { IcBookmarkDefault } from '../../../../assets/svgs/0_icons';
+
 const SectionContainer = () => {
   return (
     <>

@@ -27,7 +27,7 @@ type OrderFetch = {
         amount: number;
         itemName: string;
         brandName: string;
-        totalItemPrice: number;
+        getTotalItemPrice: number;
       }[];
     };
   };
@@ -39,7 +39,7 @@ const Order = () => {
     const getData = async () => {
       try {
         const { data } = await client.get<OrderFetch>(`/order/1`);
-        console.log(data);
+
         setRes(data);
       } catch (err) {
         console.log(err);
@@ -69,6 +69,7 @@ const Order = () => {
             </>
           )}
         </S.OrderLayout>
+
         {res && <PaymentInfo totalPrice={res.data.orderItemInfo.totalItemsPrice} />}
       </S.OrderContainer>
     </S.OrderWrapper>

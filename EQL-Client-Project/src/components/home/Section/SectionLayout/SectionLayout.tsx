@@ -1,5 +1,6 @@
-import { ImgPost10, ImgPost8, ImgPost9 } from '../../../../assets/images';
 import * as S from './SectionLayout.style';
+
+import { ImgPost10, ImgPost8, ImgPost9 } from '../../../../assets/Images';
 
 const SectionLayout = () => {
   return (
