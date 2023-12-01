@@ -3,9 +3,9 @@ import * as S from './Product.style';
 import { useEffect, useState } from 'react';
 
 import { IcArrowBreadCrumb } from '../../assets/svgs/0_icons';
-import Left from './Left';
+import Left from '../../components/Product/Left';
 import { ProductProps } from '../../types/product';
-import Right from './Right';
+import Right from '../../components/Product/Right';
 import { client } from '../../utils/api/axios';
 import { useParams } from 'react-router-dom';
 
