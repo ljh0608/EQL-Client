@@ -1,4 +1,4 @@
-import { ImgPost1, ImgPost2, ImgPost3, ImgPost4, ImgPost5, ImgPost7 } from '../assets/Images';
+import { ImgPost1, ImgPost2, ImgPost3, ImgPost4, ImgPost5, ImgPost6 } from '../assets/Images';
 
 export const PRODUCTPOSTIMG = [
   '0번째 이미지 없음',
@@ -7,5 +7,5 @@ export const PRODUCTPOSTIMG = [
   ImgPost3,
   ImgPost4,
   ImgPost5,
-  ImgPost7,
+  ImgPost6,
 ];
