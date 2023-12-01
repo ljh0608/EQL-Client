@@ -21,4 +21,4 @@ export { default as ImgPost7 } from './ImgPost7.png';
 export { default as ImgPost8 } from './ImgPost8.png';
 export { default as ImgPost9 } from './ImgPost9.png';
 export { default as ImgPost10 } from './ImgPost10.png';
-export { default as ImgPost11 } from './ImgPost11.png';
+export { default as ImgPost6 } from './ImgPost6.png';
