@@ -1,11 +1,13 @@
 import * as S from './Product.style';
-import { IcArrowBreadCrumb } from '../../assets/svgs/0_icons';
-import Right from './Right';
-import Left from './Left';
+
 import { useEffect, useState } from 'react';
+
+import { IcArrowBreadCrumb } from '../../assets/svgs/0_icons';
+import Left from './Left';
+import { ProductProps } from '../../types/product';
+import Right from './Right';
 import { client } from '../../utils/api/axios';
 import { useParams } from 'react-router-dom';
-import { ProductProps } from '../../types/product';
 
 const Product = () => {
   const { productId } = useParams();
