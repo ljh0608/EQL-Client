@@ -9,6 +9,7 @@ import ImgPost2 from './ImgPost2.png';
 import ImgPost3 from './ImgPost3.png';
 import ImgPost4 from './ImgPost4.png';
 import ImgPost5 from './ImgPost5.png';
+import ImgPost6 from './ImgPost6.png';
 import ImgPost7 from './ImgPost7.png';
 import ImgPost8 from './ImgPost8.png';
 import ImgPost9 from './ImgPost9.png';
@@ -32,12 +33,13 @@ export { ImgPost2 };
 export { ImgPost3 };
 export { ImgPost4 };
 export { ImgPost5 };
-
+export { ImgPost6 };
 export { ImgRec1 };
 export { ImgRec2 };
 export { ImgRec3 };
 export { ImgRec4 };
 export { ImgRec5 };
+
 export { ImgRec6 };
 export { ImgRec7 };
 export { ImgPost7 };
