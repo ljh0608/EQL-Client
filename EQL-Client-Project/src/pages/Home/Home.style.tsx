@@ -14,7 +14,6 @@ export const CarouselContainer = styled.main`
   height: 100%;
   padding-bottom: 17.2rem;
 `;
-export const CarouselStyle = styled.div``;
 export const SliderBox = styled(Slider)`
   .slick-prev {
     position: absolute;
@@ -38,26 +37,4 @@ export const SliderBox = styled(Slider)`
 
 export const CarouselImgWrapper = styled.img`
   width: 100%;
-`;
-export const CarouselLeftBox = styled.div`
-  position: absolute;
-  z-index: 998;
-  top: 0;
-  left: 0;
-
-  width: 25%;
-  height: 72.5%;
-
-  background-color: rgba(0, 0, 0, 0.4);
-`;
-export const CarouselRightBox = styled.div`
-  position: absolute;
-  z-index: 998;
-  top: 0;
-  right: 0;
-
-  width: 25%;
-  height: 72.5%;
-
-  background-color: rgba(0, 0, 0, 0.4);
 `;
